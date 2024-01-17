@@ -1,27 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.todolist{
+
+.todolist {
     height: 100vh;
     width: 100%;
-    background:radial-gradient(#FF7168,#9381FF);
+    background: radial-gradient(#FF7168, #9381FF);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main{
+main {
     width: 500px;
     height: 600px;
     background-color: #FFDEEF;
     border-radius: 40px;
 }
-main .logo img{
+
+main .logo img {
     width: 60px;
 }
-main .logo{
+
+main .logo {
     margin: 50px 0 45px;
     width: 100%;
     height: 50px;
@@ -29,7 +32,8 @@ main .logo{
     justify-content: center;
 
 }
-main .enter input{
+
+main .enter input {
     width: 280px;
     height: 50px;
     padding: 5px;
@@ -38,10 +42,10 @@ main .enter input{
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
-    padding-left: 20px;
-
+    padding-left: 30px;
 }
-.enter button{
+
+.enter button {
     width: 85px;
     height: 50px;
     border-radius: 40px;
@@ -54,5 +58,30 @@ main .enter input{
 .enter {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 23px;
+}
+.tasks-list{
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tasks-list .task{
+    width: 396px;
+    height: auto;
+    flex-shrink: 0; 
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+    align-items: center;
+    gap:14px;
+    font-size: 14px;
+    padding: 14px;
+}
+.tasks-list .task img{
+    width: 20px;
+    height: 23.983px;
+    flex-shrink: 0;
 }
