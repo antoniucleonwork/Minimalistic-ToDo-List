@@ -18,6 +18,7 @@ main {
     height: 600px;
     background-color: #FFDEEF;
     border-radius: 40px;
+
 }
 
 main .logo img {
@@ -69,6 +70,7 @@ main .enter input {
     justify-content: center;
     margin-top: 20px;
     gap: 14px;
+
 }
 
 .tasks-list .task{
@@ -93,7 +95,7 @@ main .enter input {
     margin-left: auto;
 }
 
-.content {
+.content{
     width: 300px;
     height: auto;
     
