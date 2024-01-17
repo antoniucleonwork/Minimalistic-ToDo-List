@@ -65,12 +65,11 @@ main .enter input {
 .tasks-list{
     width: 500px;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     justify-content: center;
     margin-top: 20px;
     gap: 14px;
-
 }
 
 .tasks-list .task{
