@@ -52,6 +52,7 @@ main .enter input {
     background: rgba(210, 147, 240, 0.86);
     border: none;
     box-shadow: 0px 3px 2px rgb(0, 0, 0, 0.6);
+    cursor: pointer;
     /* box-shadow: inset 1px 2px 5px rgb(0, 0, 0, 0.6) */
 }
 
@@ -64,8 +65,10 @@ main .enter input {
     width: 500px;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+    gap: 14px;
 }
 
 .tasks-list .task{
@@ -74,6 +77,7 @@ main .enter input {
     flex-shrink: 0; 
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.80);
+    justify-content: space-between;
     display: flex;
     align-items: center;
     gap:14px;
@@ -84,4 +88,13 @@ main .enter input {
     width: 20px;
     height: 23.983px;
     flex-shrink: 0;
+}
+.tasks-list .task img.trash {
+    margin-left: auto;
+}
+
+.content {
+    width: 300px;
+    height: auto;
+    
 }
