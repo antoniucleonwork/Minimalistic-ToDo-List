@@ -77,6 +77,18 @@ main .enter input {
     max-height: 330px;
     overflow: auto;
 }
+.tasks-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tasks-list::-webkit-scrollbar-thumb {
+    background-color: rgba(210, 147, 240, 0.86); 
+    border-radius: 6px; 
+}
+
+.tasks-list::-webkit-scrollbar-track {
+    background-color: #ead7d7; 
+}
 
 .tasks-list .task{
     width: 396px;
