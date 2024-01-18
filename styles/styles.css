@@ -75,6 +75,7 @@ main .enter input {
     margin-top: 20px;
     gap: 14px;
     max-height: 330px;
+    overflow: auto;
 }
 
 .tasks-list .task{
