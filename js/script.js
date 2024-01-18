@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let onlySpacesRegex = /^\s*$/; // Строка состоит только из пробелов
 
         if (!onlySpacesRegex.test(inputFieldValue)) {
-            let newTask = `<div class="task"><img src="img/check.svg" alt=""><div class="content"><p>${inputFieldValue}</p></div><img src="img/trash.svg" alt=""></div>`;
-            allTasks.innerHTML += newTask;
+            let newTask = `<div class="task"><img src="img/check.svg" alt=""><div class="content"><p></p></div><img src="img/trash.svg" alt=""></div>`;
+            let task = inputFieldValue;
+            task.querySelector('p').text content = task;
             document.querySelector('input').value = ''; // Очистить поле ввода
         }
     });
