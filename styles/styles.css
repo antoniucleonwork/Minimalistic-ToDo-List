@@ -90,13 +90,18 @@ main .enter input {
     font-size: 14px;
     padding: 14px;
 }
-.tasks-list .task img{
+.tasks-list .task img {
     width: 20px;
-    height: 23.983px;
-    flex-shrink: 0;
+    height: 24px;
+}
+.check {
+    transform: rotate(0deg);
+    -webkit-user-drag: none;
+
 }
 .tasks-list .task img.trash {
     margin-left: auto;
+    -webkit-user-drag: none;
 }
 
 .content{
