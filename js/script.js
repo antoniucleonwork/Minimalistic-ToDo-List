@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!onlySpacesRegex.test(inputFieldValue)) {
             let newTask = `<div class="task"><img src="img/check.svg" alt=""><div class="content"><p></p></div><img src="img/trash.svg" alt=""></div>`;
             let task = inputFieldValue;
-            task.querySelector('p').text content = task;
+            task.querySelector('p').textContent = task;
             document.querySelector('input').value = ''; // Очистить поле ввода
         }
     });
