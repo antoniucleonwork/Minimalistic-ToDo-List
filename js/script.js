@@ -10,9 +10,18 @@ function addTextToCrossOut(taskElement) {
 document.addEventListener('DOMContentLoaded', function () {
     let buttonAdd = document.querySelector('.js-addBtn');
     let allTasks = document.querySelector('.tasks-list'); // check trash
+    let inputField = document.querySelector('input');
 
-    buttonAdd.addEventListener('click', function () {
-        let inputFieldValue = document.querySelector('input').value;
+    buttonAdd.addEventListener('click', addTask);
+
+    inputField.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            addTask();
+        }
+    });
+
+    function addTask() {
+        let inputFieldValue = inputField.value;
         let onlySpacesRegex = /^\s*$/; // Строка состоит только из пробелов
 
         if (!onlySpacesRegex.test(inputFieldValue)) {
@@ -36,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 newTask.remove();
             });
 
-            document.querySelector('input').value = ''; // Очистить поле ввода
+            inputField.value = ''; // Очистить поле ввода
             allTasks.appendChild(newTask); // Добавить новую задачу к списку
         }
-    });
+    }
 });

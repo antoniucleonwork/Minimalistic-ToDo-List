@@ -54,6 +54,8 @@ main .enter input {
     border: none;
     box-shadow: 0px 3px 2px rgb(0, 0, 0, 0.6);
     cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     /* box-shadow: inset 1px 2px 5px rgb(0, 0, 0, 0.6) */
 }
 
@@ -117,9 +119,16 @@ main .enter input {
     -webkit-user-drag: none;
 }
 
+img.trash:hover, img.check:hover {
+    cursor: pointer;
+}
+
 .content{
     width: 300px;
     height: auto;
     
 }
 
+.content p {
+    font-family: 'Ubuntu', sans-serif;
+}
